@@ -1,0 +1,31 @@
+{
+  "name": "yantech-generate-tests",
+  "version": "1.0.0",
+  "description": "Générateur de scénarios de test automatisés à partir de specs fonctionnelles, propulsé par l’IA. Un outil Yantech conçu en build in public.",
+  "main": "index.js",
+  "directories": {
+    "doc": "docs"
+  },
+  "bin": {
+    "yantech-generate-tests": "bin/main.js"
+  },
+  "scripts": {
+    "build": "tsc",
+    "postbuild": "chmod +x bin/main.js",
+    "dev": "tsc --watch",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "chalk": "^5.4.1",
+    "commander": "^14.0.0",
+    "dotenv": "^16.5.0",
+    "openai": "^5.5.1"
+  },
+  "devDependencies": {
+    "@types/node": "^24.0.3",
+    "typescript": "^5.8.3"
+  }
+}
